@@ -20,8 +20,7 @@ require_once 'conn.php';
 				$list[] = $loc_name;
 			}
 
-			$data = json_encode($list);
-			$answer = $data;
+			$answer = json_encode($list);
 			$db_link->close();
 		}
 		else if($category == 'drink'){
